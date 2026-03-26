@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.player-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectable {
+  width: 100px;
+  cursor: pointer;
+}
+
+.selectable.active {
+  width: 200px;
+  cursor: default;
+}
+
+.player-select.selection-made .selectable:not(.active) {
+  display: none;
+}
