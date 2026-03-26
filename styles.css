@@ -3,10 +3,29 @@
   margin: 0;
 }
 
+.players-display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.player-box {
+  width: 50%;
+  height: 50%;
+}
+
+.selection-group {
+  display: flex;
+  justify-content: center;
+}
+
 .player-select {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 200px;
+  width: 300px;
+  /* background-color: grey; */
+  flex-wrap: wrap;
 }
 
 .selectable {
