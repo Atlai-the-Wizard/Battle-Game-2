@@ -3,36 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Battle Game</title>
+  <title>Battle Game 2</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <p class="title">BATTLE GAME 2</p>
+
   <div class="players-display">
 
     <div class="playerOne player-box">
       <p class="player-title">Player One</p>
-      <div class="screen">
-        <div class="selection-group">
-          <div class="player-select">
-            <img src="Images/Banana.jpg" alt="Banana" class="selectable">
-            <img src="Images/Hero.jpg" alt="Hero" class="selectable">
-            <img src="Images/Moss Ball.jpg" alt="Moss Ball" class="selectable">
-            <img src="Images/Samurai.jpg" alt="Samurai" class="selectable">
-            <img src="Images/Taxi.jpg" alt="Taxi" class="selectable">
-            <img src="Images/Witch.jpg" alt="Witch" class="selectable">
-          </div>
+      <div class="selection-group">
+        <div class="player-select">
+          <img src="Images/Banana.jpg" alt="Banana" class="selectable">
+          <img src="Images/Hero.jpg" alt="Hero" class="selectable">
+          <img src="Images/Moss Ball.jpg" alt="Moss Ball" class="selectable">
+          <img src="Images/Samurai.jpg" alt="Samurai" class="selectable">
+          <img src="Images/Taxi.jpg" alt="Taxi" class="selectable">
+          <img src="Images/Witch.jpg" alt="Witch" class="selectable">
         </div>
       </div>
       <div class="stats">
-        <div class="stats-power">
-          <button class="power-btn-inc" data-player-power="playerOne">+</button>
-          <div class="stats-power-display" id="playerOne-power">2</div>
-          <button class="power-btn-dec" data-player-power="playerOne">-</button>
+        <div class="stats-power stats-box">
+          <img src="Images/Power.jpg" alt="power" class="power-img">
+          <div class="adjust-box">  
+            <button class="power-btn-inc" data-player-power="playerOne">+</button>
+            <div class="stats-power-display" id="playerOne-power">2</div>
+            <button class="power-btn-dec" data-player-power="playerOne">-</button>
+          </div>
         </div>
-        <div class="stats-money">
-          <button class="money-btn-inc" data-player-money="playerOne">+</button>
-          <div class="stats-money-display" id="playerOne-money">2</div>
-          <button class="money-btn-dec" data-player-money="playerOne">-</button>
+        <div class="stats-money stats-box">
+          <img src="Images/Money.jpg" alt="money" class="money-img">
+          <div class="adjust-box">
+            <button class="money-btn-inc" data-player-money="playerOne">+</button>
+            <div class="stats-money-display" id="playerOne-money">2</div>
+            <button class="money-btn-dec" data-player-money="playerOne">-</button>
+          </div>
         </div>
       </div>
     </div>

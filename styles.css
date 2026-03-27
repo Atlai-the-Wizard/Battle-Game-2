@@ -3,6 +3,20 @@
   margin: 0;
 }
 
+.title {
+  font-size: 2em;
+  text-align: center;
+  background-color: rgb(122, 206, 186);
+}
+
+.player-title {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  color: green;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .players-display {
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +25,8 @@
 .player-box {
   width: 50%;
   height: 50%;
+  background-color: aliceblue;
+  border-radius: 15%;
 }
 
 .selection-group {
@@ -24,20 +40,52 @@
   align-items: center;
   height: 200px;
   width: 300px;
-  /* background-color: grey; */
+  background-color: white;
   flex-wrap: wrap;
+  border-radius: 5%;
 }
 
 .selectable {
-  width: 100px;
+  width: 80px;
+  height: 80px;
   cursor: pointer;
+  transition: .2s;
+}
+
+.selectable:hover {
+  width: 100px;
+  height: 100px;
+  transition: .2s;
 }
 
 .selectable.active {
-  width: 200px;
+  width: 150px;
+  height: 150px;
   cursor: default;
+  transition: .2s;
 }
 
 .player-select.selection-made .selectable:not(.active) {
   display: none;
+}
+
+.stats {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20%;
+}
+
+.stats-box {
+  display: flex;
+  align-items: center;
+}
+
+.power-img {
+  height: 30px;
+  width: 40px;
+}
+
+.money-img {
+  height: 30px;
+  width: 40px;
 }
