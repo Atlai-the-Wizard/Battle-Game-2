@@ -3,6 +3,34 @@
   margin: 0;
 }
 
+button {
+  border: 1px solid grey;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-color: bisque;
+}
+
+button:hover {
+  border: 1px solid green;
+  background-color: black;
+  color: azure;
+}
+
+button:active {
+  border: 1px solid lightgreen;
+  background-color: lightblue;
+  color: aquamarine;
+}
+
+.btn-inc {
+  border-radius: 50% 50% 0 0;
+}
+
+.btn-dec {
+  border-radius: 0 0 50% 50%;
+}
+
 .title {
   font-size: 2em;
   text-align: center;
@@ -71,8 +99,14 @@
 
 .stats {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 20%;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: 2px solid grey;
+  width: 25%;
+  border-radius: 10%;
+  background-color: beige;
 }
 
 .stats-box {
@@ -88,4 +122,14 @@
 .money-img {
   height: 30px;
   width: 40px;
+}
+
+.display {
+  text-align: center;
+  background-color: white;
+  border: 1px solid green;
+}
+
+.stats-img {
+  border: 1px solid red;
 }
