@@ -100,9 +100,7 @@ button:active {
 .stats {
   display: flex;
   justify-content: space-evenly;
-  margin-left: 10%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin: auto;
   border: 2px solid grey;
   width: 25%;
   border-radius: 10%;
